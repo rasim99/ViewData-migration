@@ -1,0 +1,28 @@
+﻿@model Product
+@{
+	ViewData["Title"] = "Index";
+}
+<h1>Index</h1>
+
+@*<p>@ViewBag.Product.Name</p>*@
+@*foreach(var item in ViewBag.Products)
+{
+<p style="color:red">@item.Name</p>
+	
+}*@
+
+@*<p>@ViewData["Name"]</p>
+<p>@ViewData["SurName"]</p>
+<p>@ViewData["age"]</p>*@
+
+@*<p>@ViewBag.Name</p>
+<p>@ViewBag.Surname</p>
+<p>@ViewBag.age</p>*@
+
+
+@*<p>@TempData["Name"]</p>
+<p>@TempData["SurName"]</p>
+<p>@TempData["age"]</p>*@
+<p> ViewData    =>>>      @ViewData["Name"]</p>
+<p>ViewBag       =>>>         @ViewBag.SurName</p>
+<p>TempData    =>>        @TempData["Age"]</p>
