@@ -19,8 +19,15 @@ using ViewDataViewBag.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\ASUS\Desktop\BACKEND\ViewDataViewBag\ViewDataViewBag\Views\_ViewImports.cshtml"
+using ViewDataViewBag.DAL;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2bb20b99eb0a417132f910a032460a95cad017ec", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8d3fc3122528e89685075d43395c7009895ea11d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c8a8b95c8565f4818a8014dd3f96b465da0b79f0", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Product>
     #nullable disable

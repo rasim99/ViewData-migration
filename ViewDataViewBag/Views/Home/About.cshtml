@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Student>
 @{
     ViewData["Title"] = "About";
 }
@@ -8,6 +8,14 @@
 <p> ViewData    =>>>      @ViewData["Name"]</p>
 <p>ViewBag       =>>>         @ViewBag.SurName</p>
 <p>TempData    =>>        @TempData["Age"]</p>
+
+@foreach(var item in Model)
+{
+    <p>@item.Id</p>
+    <p>@item.Name</p>
+    <p>@item.Surname</p>
+    <p>@item.Age</p>
+}
 
 
 

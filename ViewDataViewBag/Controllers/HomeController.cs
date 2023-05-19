@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
+using ViewDataViewBag.DAL;
 using ViewDataViewBag.Models;
 
 namespace ViewDataViewBag.Controllers
 {
 	public class HomeController : Controller
 	{
-		public IActionResult Index()
+		private readonly AppDbContext _appDbContext;
+
+        public HomeController(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
+
+        public IActionResult Index()
 		{
 			//ViewData
 			//var p = new Product
@@ -42,7 +51,8 @@ namespace ViewDataViewBag.Controllers
 		}
 		public IActionResult About()
 		{
-			return View();
+			List<Student> students = _appDbContext.Students.ToList();
+			return View(students);
 		}
 
 	}
